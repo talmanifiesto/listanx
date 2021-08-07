@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--Import Google Icon Font-->
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body class="content">
+  <div class="loaderagain" id="loading"></div>
+<div class="container" id="contenido">
+  <h1>Lista de Next Fligth</h1>
+
+    <div class="row">      
+      <div class="col s12">
+      <input type="text" placeholder="busqueda" class="datepicker col s4" id="idfecha">  
+      <div class="col s2"></div>
+      <button id ="btnfecha" class="btn waves-effect waves-light col s5 m2" type="button">Busqueda
+        <i class="material-icons right">send</i>
+      </button>
+      </div>
+    </div>
+
+
+
+
+    <!--modalllll-->
+<!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Detalle de OS</h4>
+	<form>
+		<div class="row">
+			<div class="input-field col s12 m6">
+				<input id="orden_servicio" type="text" class="validate">
+				<label for="orden_servicio">OS</label>
+			</div>
+			<div class="input-field col s12 m6">
+				<input id="fecha_venta" type="text" class="validate">
+				<label for="fecha_venta">Fecha de Vuelo</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12 m6">
+				<input id="destino" type="text" class="validate">
+				<label for="destino">Destino</label>
+			</div>
+			<div class="input-field col s12 m6">
+				<input id="name_cliente" type="text" class="validate">
+				<label for="name_cliente">Nombre de Cliente</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12 m6">
+				<input id="phone_cliente" type="text" class="validate">
+				<label for="phone_cliente">Celular cliente</label>
+			</div>
+			<div class="input-field col s12 m6">
+				<input id="fecha_hora_venta" type="text" class="validate">
+				<label for="fecha_hora_venta">Fecha de registro</label>
+			</div>
+		</div>
+	</form>
+      
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+    </div>
+    <!--modalllll-->
+    </div>
+
+
+<table class="col s12">
+    <thead>
+      <tr>
+        <th>N°</th>
+        <th>OS</th>
+        <th>Destino</th>
+        <th>Vuelo</th>
+        <th></th>
+      </tr>
+    </thead>
+      <tbody id="res">
+      </tbody>
+  </table>
+  
+</div>
+<!--JavaScript at end of body for optimized loading--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script> 
+<script type="text/javascript" src="api.js"></script> 
+<script type="text/javascript" src="filter_data.js"></script>
+        
+</body>
+</html>

@@ -1,0 +1,23 @@
+.content{
+	position: relative;
+	/*min-height: 100vh !important;*/
+}
+.loaderagain{
+	position: absolute;
+	background-position: center;
+	min-height: 80vh;
+	width: 100%;
+	z-index: -99;
+}
+.loader{
+	background: url(ajax-loader.gif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	transition: .5s;
+	z-index: 99;
+	background-color: rgba(255,255,255,.9);
+}
+.contenido{
+	display: none;
+}
